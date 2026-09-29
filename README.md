@@ -1,97 +1,233 @@
 # TRABAJO-DE-FIN-DE-PARCIAL
 
-## Instrucciones de descarga y ejecución
+Repositorio correspondiente al **Trabajo de Fin de Parcial**, desarrollado en lenguaje **C**.
 
-### 1) Descargar el repositorio
+## 📥 Descarga
 
-Opción A: clonar con Git
+### Clonar el repositorio con Git
 
-
+```bash
 git clone https://github.com/Calaco234/TRABAJO-DE-FIN-DE-PARCIAL.git
+```
 
-Opción B: descargar ZIP
+Entrar a la carpeta:
 
-Ingrese a la página del repositorio en GitHub
-Haz clic enCode
-SeleccionaDownload ZIP
-Descomprime la carpeta en tu equipo
-2) Entrar a la carpeta del proyecto
-intento
+```bash
 cd TRABAJO-DE-FIN-DE-PARCIAL
-3) Compilar el proyecto
-Linux / macOS:
+```
 
-intento
-make
-Windows (si tienes MinGW, MSYS2 o Git Bash instalado):
+### Descargar ZIP
 
-intento
-make
-Si makeno funciona en Windows, instale MinGW o MSYS2 y asegúrese de que gccestén makeen el PATH.
+También puedes descargar el proyecto directamente desde GitHub:
 
-4) Ejecutar el programa
-Linux / macOS:
+**Code → Download ZIP**
 
-intento
-./trabajo
-Windows:
+Después, descomprime el archivo y abre la carpeta del proyecto.
 
-intento
-trabajo.exe
-5) Limpiar archivos compilados
-intento
-make clean
-Abrir el proyecto en VS Code
-Desde la terminal:
+---
 
-intento
-code .
-O desde VS Code:
+## 🔧 Requisitos
 
-Archivo → Abrir carpeta
-Selecciona la carpetaTRABAJO-DE-FIN-DE-PARCIAL
-Luego, en el terminal integrado de VS Code, ejecuta:
+Para compilar el proyecto necesitas:
 
-intento
-make
-./trabajo
-En Windows:
+* **GCC**
+* **Make**
+* **Git** (si utilizas `git clone`)
+* **Visual Studio Code** (opcional)
 
-intento
-make
-trabajo.exe
-Dependencias recomendadas
-Git
-GCC
-Hacer
-VS Code (opcional)
-Requisitos de sistema
-Windows
-Instalar MinGW-w64 o MSYS2
-Abre la terminal de Git Bash o PowerShell
-Ejecuta los comandos anteriores
-Linux
-Instale las herramientas de compilación:
-intento
+---
+
+## 🐧 Linux
+
+### Instalar herramientas de compilación
+
+En Ubuntu o distribuciones basadas en Debian:
+
+```bash
 sudo apt update
 sudo apt install build-essential
-Fedora / CentOS
-intento
-sudo dnf install make gcc
-Flujo rápido
-Linux / macOS:
+```
 
-intento
+Verificar la instalación:
+
+```bash
+gcc --version
+make --version
+```
+
+### Compilar
+
+Dentro de la carpeta del proyecto:
+
+```bash
+make
+```
+
+### Ejecutar
+
+```bash
+./trabajo
+```
+
+### Limpiar archivos compilados
+
+```bash
+make clean
+```
+
+---
+
+## 🍎 macOS
+
+Verifica que tengas instaladas las herramientas necesarias.
+
+Para compilar:
+
+```bash
+make
+```
+
+Ejecutar:
+
+```bash
+./trabajo
+```
+
+Limpiar:
+
+```bash
+make clean
+```
+
+---
+
+## 🪟 Windows
+
+Se recomienda utilizar **MinGW-w64**, **MSYS2** o **Git Bash**.
+
+Verifica que `gcc` y `make` estén disponibles:
+
+```bash
+gcc --version
+```
+
+```bash
+make --version
+```
+
+### Compilar
+
+```bash
+make
+```
+
+### Ejecutar
+
+```bash
+trabajo.exe
+```
+
+### Limpiar
+
+```bash
+make clean
+```
+
+---
+
+## 💻 Visual Studio Code
+
+Puedes abrir el proyecto directamente desde la terminal:
+
+```bash
+code .
+```
+
+O desde Visual Studio Code:
+
+**Archivo → Abrir carpeta → TRABAJO-DE-FIN-DE-PARCIAL**
+
+Después abre el terminal integrado y ejecuta:
+
+```bash
+make
+```
+
+### Linux / macOS
+
+```bash
+./trabajo
+```
+
+### Windows
+
+```bash
+trabajo.exe
+```
+
+---
+
+## ⚡ Ejecución rápida
+
+### Linux / macOS
+
+```bash
 git clone https://github.com/Calaco234/TRABAJO-DE-FIN-DE-PARCIAL.git
 cd TRABAJO-DE-FIN-DE-PARCIAL
 make
 ./trabajo
-Windows:
+```
 
-intento
+### Windows
+
+```bash
 git clone https://github.com/Calaco234/TRABAJO-DE-FIN-DE-PARCIAL.git
 cd TRABAJO-DE-FIN-DE-PARCIAL
 make
 trabajo.exe
-Código
+```
 
+---
+
+## 📂 Estructura del proyecto
+
+```text
+TRABAJO-DE-FIN-DE-PARCIAL/
+│
+├── README.md
+├── Makefile
+├── *.c
+└── trabajo
+```
+
+El archivo `trabajo` se genera automáticamente al ejecutar:
+
+```bash
+make
+```
+
+---
+
+## 🧹 Limpiar el proyecto
+
+Para eliminar los archivos generados durante la compilación:
+
+```bash
+make clean
+```
+
+Después puedes volver a compilar con:
+
+```bash
+make
+```
+
+---
+
+## 👨‍💻 Autor
+
+**Calaco234**
+
+Repositorio:
+
+https://github.com/Calaco234/TRABAJO-DE-FIN-DE-PARCIAL.git
