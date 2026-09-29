@@ -1,2 +1,12 @@
 # TRABAJO-DE-FIN-DE-PARCIAL
-NO TOCAR 
+
+
+## Instrucciones de descarga y ejecución
+
+### 1) Descargar el repositorio
+
+Opción A: clonar con Git
+
+```bash
+git clone https://github.com/Calaco234/TRABAJO-DE-FIN-DE-PARCIAL.git
+
