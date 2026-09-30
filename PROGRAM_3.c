@@ -22,10 +22,8 @@ int main()
     return 0;
 }
 
-/*
-COMO EJECUTAR:
+//COMO EJECUTAR:
 
-gcc funciones.c -o funciones -lm
+//gcc PROGRAM_3.c -o PROGRAM_3 -lm
 
-gnuplot -p -e "plot '< ./seno' using 1:2 with lines title 'Seno(x)', '< ./seno' using 1:3 with lines title 'Coseno(x)'"
-*/
+//gnuplot -p -e "plot '< ./PROGRAM_3' using 1:2 with lines title 'Seno(x)', '< ./PROGRAM_3' using 1:3 with lines title 'Coseno(x)'"
