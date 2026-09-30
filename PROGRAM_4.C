@@ -2,25 +2,20 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main() {
-    double sueldo_mensual = 4800.0;
-    double sueldo_anual_inicial = sueldo_mensual * 12;
-    int n_fijo = 8;
-    double total_anual_fijo = sueldo_anual_inicial * pow(1.04, n_fijo);
+int main(void)
+{
+    double sueldo = 4800.0;
     int años;
-    printf("Ingrese a cuantos años quiere calcular: ");
-    if (scanf("%d", &años) != 1) {
-        printf("Error: Debe ingresar un numero entero.\n");
-        return EXIT_FAILURE;
-    }
-    double total_anual_usuario = sueldo_anual_inicial * pow(1.04, años);
-    printf("Total ganado en el año %d : %.2f pesos\n", años, total_anual_usuario);
-    printf("Total ganado en el año %d : %.2f pesos\n", n_fijo, total_anual_fijo);
     
+    double total8 = sueldo * 12 * pow(1.04, 8);
+
+    printf("Ingrese los años que desea calcular: ");
+    scanf("%d", &años);
+
+    double total = sueldo * 12 * pow(1.04, años);
+
+    printf("\nTotal en 8 años: %.2f pesos\n", total8);
+    printf("Total en %d años: %.2f pesos\n", años, total);
+
     return EXIT_SUCCESS;
 }
-
-
-
-
-
